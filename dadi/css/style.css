@@ -1,0 +1,64 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #005a4e;
+    color: white;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px 0;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    font-size: 35px;
+}
+.btn-content {
+    display: flex;
+    justify-content: center;  
+    padding: 30px 0;  
+}
+button {
+    background-color: #e60000;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+button:hover {
+    background-color: #ca0000;
+}
+.am-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#user-number, #computer-number {
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.result-message-color {
+    font-size: 70px;
+    color: black;
+    padding: 10px 0;
+}
+.result-message-color.win {
+    background-color: #9cf157;
+}
+.result-message-color.lose {
+    background-color: #ff6161;
+}
+.result-message-color.draw {
+    background-color: #ffbb55;
+}

@@ -13,6 +13,8 @@ let computerNumber;
 // Variabile risultato finale
 let resultMessage;
 
+let resultMessageColor;
+
 // Genero un numero random da 1 a 6, sia per il giocatore sia per il computer.
 amBtn.addEventListener("click",
     function () {
@@ -30,15 +32,26 @@ amBtn.addEventListener("click",
         // ALTRIMENTI SE il computer ha il punteggio più alto del giocatore, il giocatore perde
         // ALTRIMENTI se il punteggio è pari il risultato è "Pareggio"
         if (userNumber > computerNumber) {
-            resultMessage = "Hai vinto!";
+            resultMessage = "HAI VINTO!";
+            resultMessageColor = 'win';
         } else if (userNumber < computerNumber) {
-            resultMessage = "Hai perso!";
+            resultMessage = "HAI PERSO!";
+            resultMessageColor = 'lose';
         } else {
-            resultMessage = "Pareggio";
+            resultMessage = "PAREGGIO";
+            resultMessageColor = 'draw';
         };
+
+
+        const amResult = document.querySelector('.am-result');
         
         // Stampo il risultato ottenuto dal giocatore
-        document.getElementById('result-message').innerHTML = resultMessage;
+        //document.getElementById('result-message').innerHTML = `<div class="result-message-color ${resultMessageColor}">${resultMessage}</div>`;
+        
+
+        const amResultBox = `<div class="result-message-color ${resultMessageColor}">${resultMessage}</div>`;
+
+        amResult.innerHTML = amResultBox;
     }
 );
 

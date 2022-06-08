@@ -4,46 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gioca ai dadi</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <h1>
-        Gioca ai dadi
-    </h1>
-
-    <div>
-        <button id="am-btn">GIOCA!</button>
-    </div>
+    <div class="container">
+        <h1>
+            Gioca ai dadi
+        </h1>
     
-
-    <!-- RISULTATO DEI DADI -->
-    <div class="am-container">
-        <!-- GIOCATORE -->
-        <div>
-            <h2>
-                Il tuo risultato
-            </h2>
-            <!-- Risultato del giocatore -->
-            <div id="user-number"></div>
-    
+        <div class="btn-content">
+            <button id="am-btn">LANCIA IL DADO!</button>
         </div>
-
-        <!-- COMPUTER -->
-        <div>
-            <h2>
-                Il banco
-            </h2>
+        
+        <!-- RISULTATO DEI DADI -->
+        <div class="am-container">
+            <!-- GIOCATORE -->
+            <div>
+                <h2>
+                    Il tuo risultato
+                </h2>
+                <!-- Risultato del giocatore -->
+                <div id="user-number"></div>
+        
+            </div>
     
-            <!-- Risultato del computer -->
-            <div id="computer-number"></div>
+            <!-- COMPUTER -->
+            <div>
+                <h2>
+                    Il banco
+                </h2>
+        
+                <!-- Risultato del computer -->
+                <div id="computer-number"></div>
+            </div>
         </div>
-    </div>
-
-    <!-- RISULTATO FINALE -->
-    <div class="am-container">
-        <!-- Messaggio finale -->
-        <div id="result-message"></div>
+    
+        <!-- RISULTATO FINALE -->
+        <div class="am-result">
+            <!-- Messaggio finale -->
+            <div class="result-message-color" id="result-message"></div>
+        </div>
     </div>
     
     <script type="text/javascript" src="js/script.js"></script>
