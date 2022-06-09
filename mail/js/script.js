@@ -24,11 +24,11 @@ for (let i = 0; i < emailList.length; i++) {
         // SE l'email è presente nell'Array il risultato di "verifyEmail" sarà "true" ALTRIMENTI resta "false" dalla variabile di default
         verifyEmail = true;
     };
-};
+}
 
 // Stampo il messaggio del risultato ottenuto
-if (verifyEmail) {
+if (verifyEmail === true) {
     alert("La tua email è corretta!");
 } else {
     alert("La tua email non è corretta. Verifica di aver digitato correttamente la tua email!");
-};
+}

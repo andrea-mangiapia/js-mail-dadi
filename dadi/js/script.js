@@ -40,7 +40,7 @@ amBtn.addEventListener("click",
         } else {
             resultMessage = "PAREGGIO";
             resultMessageColor = 'draw';
-        };
+        }
 
 
         const amResult = document.querySelector('.am-result');
@@ -53,5 +53,5 @@ amBtn.addEventListener("click",
 
         amResult.innerHTML = amResultBox;
     }
-);
+)
 
